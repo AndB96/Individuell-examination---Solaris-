@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="app">
+      <section id="planet-overview">
+        <div class="title">
+          <h1 class="main-title">SOLSYSTEMET</h1>
+          <h2 class="secondary-title">SOLARIS</h2>
+        </div>
+        <div class="stellar-body big-body solen"></div>
+        <section class="search-wrap">
+          <input
+            type="text"
+            id="search"
+            placeholder="Sök efter en himlakropp"
+            autocomplete="off"
+          />
+        </section>
+        <section id="planets">
+          <div class="merkurius stellar-body"></div>
+          <div class="venus stellar-body"></div>
+          <div class="tellus stellar-body"></div>
+          <div class="mars stellar-body"></div>
+          <div class="lovis stellar-body"></div>
+          <div class="saturnus stellar-body">
+            <div class="line"></div>
+          </div>
+          <div class="uranus stellar-body"></div>
+          <div class="neptunus stellar-body"></div>
+        </section>
+      </section>
+
+      <section id="planet-info">
+        <button id="back-button">&lt; TILLBAKA</button>
+        <div id="planet-side-view" class="stellar-body"></div>
+        <section class="planet-info-content">
+          <h1 id="planet-main-title" class="main-title"></h1>
+          <h2
+            id="planet-secondary-title"
+            class="secondary-title planet-info-secondary"
+          ></h2>
+          <p id="planet-info-text"></p>
+          <section class="stats">
+            <section class="stat-column">
+              <article class="stat">
+                <h3>OMKRETS</h3>
+                <span class="stat-info" id="planet-info-diameter"></span>
+              </article>
+              <article class="stat">
+                <h3>MAX TEMPERATUR</h3>
+                <span class="stat-info" id="planet-info-max-temp"></span>
+              </article>
+            </section>
+            <section class="stat-column">
+              <article class="stat">
+                <h3>KM IFRÅN SOLEN</h3>
+                <span class="stat-info" id="planet-info-distance"></span>
+              </article>
+              <article class="stat">
+                <h3>MIN TEMPERATUR</h3>
+                <span class="stat-info" id="planet-info-min-temp"></span>
+              </article>
+            </section>
+          </section>
+          <section>
+            <article class="stat">
+              <h3>Månar</h3>
+              <p class="stat-info" id="planet-info-moons"></p>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <section id="error">
+        <h1 class="main-title">
+          Förlåt, något gick fel. Vänligen försök igen!
+        </h1>
+      </section>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
